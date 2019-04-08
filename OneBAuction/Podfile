@@ -38,6 +38,8 @@ target 'OneBAuction' do
     
     #网络请求
     pod 'AFNetworking'
+    #轮播图
+    pod 'SDCycleScrollView'
     
     target 'OneBAuctionTests' do
         inherit! :search_paths

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NaviBarView">
+            <rect key="frame" x="0.0" y="0.0" width="558" height="116"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s8w-d6-iVk">
+                    <rect key="frame" x="0.0" y="0.0" width="558" height="116"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elY-gZ-7Jw">
+                            <rect key="frame" x="0.0" y="54" width="60" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="8YS-8h-yIW"/>
+                                <constraint firstAttribute="width" constant="60" id="VsO-Ns-lH3"/>
+                            </constraints>
+                            <state key="normal" image="iconfont-fanhui"/>
+                            <connections>
+                                <action selector="backAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="WG6-3f-8fW"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一乙拍" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zmr-7r-HIx">
+                            <rect key="frame" x="248.5" y="72" width="61.5" height="24"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rne-Zo-vMp">
+                            <rect key="frame" x="498" y="54" width="60" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="Nlq-jz-nS5"/>
+                                <constraint firstAttribute="width" constant="60" id="gbg-yu-EC2"/>
+                            </constraints>
+                            <state key="normal" image="搜索_icon"/>
+                            <connections>
+                                <action selector="searchAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="FTq-T4-Gci"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.13725490196078433" green="0.14901960784313725" blue="0.16470588235294117" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="elY-gZ-7Jw" firstAttribute="centerY" secondItem="zmr-7r-HIx" secondAttribute="centerY" id="9qf-Pi-9i9"/>
+                        <constraint firstAttribute="trailing" secondItem="rne-Zo-vMp" secondAttribute="trailing" id="CxS-Gb-rpg"/>
+                        <constraint firstItem="zmr-7r-HIx" firstAttribute="centerX" secondItem="s8w-d6-iVk" secondAttribute="centerX" id="Hyp-4j-G5h"/>
+                        <constraint firstAttribute="bottom" secondItem="zmr-7r-HIx" secondAttribute="bottom" constant="20" id="alZ-KH-bV5"/>
+                        <constraint firstItem="rne-Zo-vMp" firstAttribute="centerY" secondItem="zmr-7r-HIx" secondAttribute="centerY" id="jNU-ai-oYa"/>
+                        <constraint firstItem="elY-gZ-7Jw" firstAttribute="leading" secondItem="s8w-d6-iVk" secondAttribute="leading" id="xcS-dG-RHM"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="s8w-d6-iVk" secondAttribute="trailing" id="E0z-n9-vUv"/>
+                <constraint firstItem="s8w-d6-iVk" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="OYf-h3-BPK"/>
+                <constraint firstItem="s8w-d6-iVk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="g66-FL-tzy"/>
+                <constraint firstAttribute="bottom" secondItem="s8w-d6-iVk" secondAttribute="bottom" id="yXs-Bj-EaH"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="backBtn" destination="elY-gZ-7Jw" id="k9P-0V-4kZ"/>
+                <outlet property="searchBtn" destination="rne-Zo-vMp" id="yfF-Kq-dRG"/>
+                <outlet property="titleLb" destination="zmr-7r-HIx" id="sKF-ya-ghr"/>
+            </connections>
+            <point key="canvasLocation" x="242.0289855072464" y="3.3482142857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="iconfont-fanhui" width="11" height="18"/>
+        <image name="搜索_icon" width="15" height="17"/>
+    </resources>
+</document>

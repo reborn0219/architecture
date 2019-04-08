@@ -7,12 +7,14 @@
 //
 
 #import "BaseViewController.h"
+#import "NaviBarView.h"
 
 @interface BaseViewController ()
 @property (nonatomic, retain) UIView* overlayView;
 @property (nonatomic, retain) UIView* bgview;
 @property (nonatomic, retain) UIActivityIndicatorView *loadingIndicator;
 @property (nonatomic, retain) UIImageView *loadingImageView;
+@property (nonatomic, retain) NaviBarView * navibarView;
 @end
 
 @implementation BaseViewController
@@ -21,11 +23,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    [self.navigationController setNavigationBarHidden:YES];
     if (iOS7) {
         self.automaticallyAdjustsScrollViewInsets = NO;
-        
     }
+    [self.view addSubview:self.navibarView];
+
+    LSWeakSelf
+    _navibarView.block = ^(NSInteger index) {
+        if (index == 1) {
+            [weakSelf backAction];
+        }
+    };
     self.view.backgroundColor = ViewController_BackGround;
     
     //导航栏 返回 按钮
@@ -33,20 +42,7 @@
     
     if (viewControllers.count > 1){
         
-        [self.navigationItem setHidesBackButton:NO animated:NO];
-        
-        UIBarButtonItem *leftBarButtonItem = [UIFactory createBackBarButtonItemWithTarget:self action:@selector(backAction)];
-        
-        if (iOS7) {
-            
-            UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
-            negativeSpacer.width = -15;
-            self.navigationItem.leftBarButtonItems = @[negativeSpacer, leftBarButtonItem];
-            
-        }else{
-            
-            self.navigationItem.leftBarButtonItem = leftBarButtonItem;
-        }
+        [self.navibarView.backBtn setHidden:NO];
         
         //返回的手势
         UISwipeGestureRecognizer *gesture = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(backSweepGesture:)];
@@ -56,8 +52,8 @@
         
     }else{
         
-        [self.navigationItem setHidesBackButton:YES animated:NO];
-        
+        [self.navibarView.backBtn setHidden:YES];
+
     }
     
     
@@ -70,7 +66,14 @@
     
 }
 
-#pragma mark -
+#pragma mark - Lazy loading
+-(NaviBarView *)navibarView{
+    if (!_navibarView) {
+        _navibarView = [[[NSBundle mainBundle]loadNibNamed:@"NaviBarView" owner:self options:nil] lastObject];
+        [_navibarView setFrame:CGRectMake(0, 0, SCREENWIDTH, k_Height_NavBar)];
+    }
+    return _navibarView;
+}
 #pragma mark Action
 
 - (void)backAction{
@@ -81,11 +84,8 @@
 
 -(void)setCustomerTitle:(NSString *)title{
     
-    UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 0, 44)];
-    titleLabel.text = title;
-    titleLabel.textColor = [UIColor whiteColor];
-    titleLabel.font = [UIFont systemFontOfSize:18];
-    self.navigationItem.titleView = titleLabel;
+    _navibarView.titleLb.text = title;
+   
     
 }
 
