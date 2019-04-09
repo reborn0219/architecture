@@ -89,6 +89,9 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
             <size key="customSize" width="208" height="337"/>
+            <connections>
+                <outlet property="backView" destination="hWu-rf-VHg" id="zuZ-Bc-5ER"/>
+            </connections>
             <point key="canvasLocation" x="252.17391304347828" y="187.16517857142856"/>
         </collectionViewCell>
     </objects>
