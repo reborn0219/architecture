@@ -9,6 +9,9 @@
 #ifndef BlockDefinition_h
 #define BlockDefinition_h
 #import "EnumerationDefinition.h"
+
+#define BackColor HexRGB(0x23262A)
+
 /**
  *  网络请求完成后调用的Block
  *

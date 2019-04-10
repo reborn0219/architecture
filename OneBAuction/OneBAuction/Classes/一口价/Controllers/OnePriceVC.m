@@ -24,6 +24,7 @@
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     [self setCustomerTitle:@"一口价"];
+    [self setNaviBar:3];
 }
 #pragma mark - 初始化UI
 -(void)creatUI{

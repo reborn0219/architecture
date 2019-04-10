@@ -37,6 +37,14 @@
 		4B8CD6FC2259E82F00271086 /* NaviBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8CD6FB2259E82F00271086 /* NaviBarView.m */; };
 		4B8CD6FE2259E83A00271086 /* NaviBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B8CD6FD2259E83A00271086 /* NaviBarView.xib */; };
 		4B8CD7032259EEFC00271086 /* PPConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8CD7022259EEFC00271086 /* PPConst.m */; };
+		4BA37B4F225DDBF50086DA9C /* LiveListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA37B4E225DDBF50086DA9C /* LiveListVC.m */; };
+		4BA37B52225DDC1C0086DA9C /* ZeroAuctionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA37B51225DDC1C0086DA9C /* ZeroAuctionVC.m */; };
+		4BA37B56225DFAAE0086DA9C /* LiveListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA37B54225DFAAE0086DA9C /* LiveListCell.m */; };
+		4BA37B57225DFAAE0086DA9C /* LiveListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA37B55225DFAAE0086DA9C /* LiveListCell.xib */; };
+		4BA37B5A225E069B0086DA9C /* ZeroAuctionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA37B59225E069B0086DA9C /* ZeroAuctionHeaderView.m */; };
+		4BA37B5C225E06AC0086DA9C /* ZeroAuctionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA37B5B225E06AC0086DA9C /* ZeroAuctionHeaderView.xib */; };
+		4BA37B60225E0C790086DA9C /* ZeroAuctionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA37B5E225E0C790086DA9C /* ZeroAuctionCell.m */; };
+		4BA37B61225E0C790086DA9C /* ZeroAuctionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA37B5F225E0C790086DA9C /* ZeroAuctionCell.xib */; };
 		4BAE437E225B923B00BF26B6 /* XXPageTabItemLable.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BAE437A225B923B00BF26B6 /* XXPageTabItemLable.m */; };
 		4BAE437F225B923B00BF26B6 /* XXPageTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BAE437B225B923B00BF26B6 /* XXPageTabView.m */; };
 		4BAE4382225B926F00BF26B6 /* PageOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BAE4380225B926E00BF26B6 /* PageOneViewController.m */; };
@@ -118,6 +126,19 @@
 		4B8CD7002259EEFC00271086 /* EnumerationDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnumerationDefinition.h; sourceTree = "<group>"; };
 		4B8CD7012259EEFC00271086 /* BlockDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockDefinition.h; sourceTree = "<group>"; };
 		4B8CD7022259EEFC00271086 /* PPConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPConst.m; sourceTree = "<group>"; };
+		4BA37B4D225DDBF50086DA9C /* LiveListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LiveListVC.h; sourceTree = "<group>"; };
+		4BA37B4E225DDBF50086DA9C /* LiveListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiveListVC.m; sourceTree = "<group>"; };
+		4BA37B50225DDC1C0086DA9C /* ZeroAuctionVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZeroAuctionVC.h; sourceTree = "<group>"; };
+		4BA37B51225DDC1C0086DA9C /* ZeroAuctionVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZeroAuctionVC.m; sourceTree = "<group>"; };
+		4BA37B53225DFAAE0086DA9C /* LiveListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LiveListCell.h; sourceTree = "<group>"; };
+		4BA37B54225DFAAE0086DA9C /* LiveListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiveListCell.m; sourceTree = "<group>"; };
+		4BA37B55225DFAAE0086DA9C /* LiveListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LiveListCell.xib; sourceTree = "<group>"; };
+		4BA37B58225E069B0086DA9C /* ZeroAuctionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZeroAuctionHeaderView.h; sourceTree = "<group>"; };
+		4BA37B59225E069B0086DA9C /* ZeroAuctionHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZeroAuctionHeaderView.m; sourceTree = "<group>"; };
+		4BA37B5B225E06AC0086DA9C /* ZeroAuctionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZeroAuctionHeaderView.xib; sourceTree = "<group>"; };
+		4BA37B5D225E0C790086DA9C /* ZeroAuctionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZeroAuctionCell.h; sourceTree = "<group>"; };
+		4BA37B5E225E0C790086DA9C /* ZeroAuctionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZeroAuctionCell.m; sourceTree = "<group>"; };
+		4BA37B5F225E0C790086DA9C /* ZeroAuctionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZeroAuctionCell.xib; sourceTree = "<group>"; };
 		4BAE437A225B923B00BF26B6 /* XXPageTabItemLable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXPageTabItemLable.m; sourceTree = "<group>"; };
 		4BAE437B225B923B00BF26B6 /* XXPageTabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXPageTabView.m; sourceTree = "<group>"; };
 		4BAE437C225B923B00BF26B6 /* XXPageTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXPageTabView.h; sourceTree = "<group>"; };
@@ -475,6 +496,15 @@
 				4B16A522225A3CFE0099F23E /* HomePageView.h */,
 				4B16A523225A3CFE0099F23E /* HomePageView.m */,
 				4B16A525225A3D0A0099F23E /* HomePageView.xib */,
+				4BA37B53225DFAAE0086DA9C /* LiveListCell.h */,
+				4BA37B54225DFAAE0086DA9C /* LiveListCell.m */,
+				4BA37B55225DFAAE0086DA9C /* LiveListCell.xib */,
+				4BA37B58225E069B0086DA9C /* ZeroAuctionHeaderView.h */,
+				4BA37B59225E069B0086DA9C /* ZeroAuctionHeaderView.m */,
+				4BA37B5B225E06AC0086DA9C /* ZeroAuctionHeaderView.xib */,
+				4BA37B5D225E0C790086DA9C /* ZeroAuctionCell.h */,
+				4BA37B5E225E0C790086DA9C /* ZeroAuctionCell.m */,
+				4BA37B5F225E0C790086DA9C /* ZeroAuctionCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -491,6 +521,10 @@
 			children = (
 				4B8CD6E82258BFB300271086 /* HomePageVC.h */,
 				4B8CD6E92258BFB300271086 /* HomePageVC.m */,
+				4BA37B4D225DDBF50086DA9C /* LiveListVC.h */,
+				4BA37B4E225DDBF50086DA9C /* LiveListVC.m */,
+				4BA37B50225DDC1C0086DA9C /* ZeroAuctionVC.h */,
+				4BA37B51225DDC1C0086DA9C /* ZeroAuctionVC.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -660,11 +694,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B16A52B225A4C4F0099F23E /* OnePriceCell.xib in Resources */,
+				4BA37B5C225E06AC0086DA9C /* ZeroAuctionHeaderView.xib in Resources */,
 				4B8CD68B22587C0300271086 /* LaunchScreen.storyboard in Resources */,
 				4B8CD68822587C0300271086 /* Assets.xcassets in Resources */,
 				4B8CD6FE2259E83A00271086 /* NaviBarView.xib in Resources */,
+				4BA37B61225E0C790086DA9C /* ZeroAuctionCell.xib in Resources */,
 				4B16A526225A3D0A0099F23E /* HomePageView.xib in Resources */,
 				4B8CD68622587C0200271086 /* Main.storyboard in Resources */,
+				4BA37B57225DFAAE0086DA9C /* LiveListCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -769,8 +806,11 @@
 				4B8CD6EA2258BFB300271086 /* HomePageVC.m in Sources */,
 				4B8CD6D12258B90F00271086 /* BaseNavigationController.m in Sources */,
 				4B8CD6CE2258B8E900271086 /* BaseViewController.m in Sources */,
+				4BA37B56225DFAAE0086DA9C /* LiveListCell.m in Sources */,
 				4BAE437E225B923B00BF26B6 /* XXPageTabItemLable.m in Sources */,
+				4BA37B4F225DDBF50086DA9C /* LiveListVC.m in Sources */,
 				4B8CD6F02258C00500271086 /* CommunicationVC.m in Sources */,
+				4BA37B5A225E069B0086DA9C /* ZeroAuctionHeaderView.m in Sources */,
 				4B8CD6B62258B5AD00271086 /* TBTabBar.m in Sources */,
 				4B8CD6C52258B69A00271086 /* UIButton+SSEdgeInsets.m in Sources */,
 				4B8CD6FC2259E82F00271086 /* NaviBarView.m in Sources */,
@@ -786,9 +826,11 @@
 				4B8CD68E22587C0300271086 /* main.m in Sources */,
 				4B8CD6B32258ADEC00271086 /* MainTabBarController.m in Sources */,
 				4B8CD6F32258C03000271086 /* MyController.m in Sources */,
+				4BA37B52225DDC1C0086DA9C /* ZeroAuctionVC.m in Sources */,
 				4B16A524225A3CFE0099F23E /* HomePageView.m in Sources */,
 				4B8CD6C42258B69A00271086 /* UIFactory.m in Sources */,
 				4B8CD68022587C0200271086 /* AppDelegate.m in Sources */,
+				4BA37B60225E0C790086DA9C /* ZeroAuctionCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

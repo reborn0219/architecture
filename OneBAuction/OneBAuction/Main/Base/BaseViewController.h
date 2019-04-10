@@ -7,13 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NaviBarView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BaseViewController : UIViewController
+@property (nonatomic, retain) NaviBarView * navibarView;
 
 - (void)backAction;
+
 -(void)setCustomerTitle:(NSString *)title;
+
+-(void)setNaviBar:(NSInteger)type;
 
 @end
 

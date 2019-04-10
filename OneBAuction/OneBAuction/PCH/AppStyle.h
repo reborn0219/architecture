@@ -59,6 +59,7 @@
 #define k_Height_StatusBar (IS_PhoneXAll? 44.0 : 20.0)
 #define k_Height_NavBar (IS_PhoneXAll ? 88.0 : 64.0)
 #define k_Height_TabBar (IS_PhoneXAll ? 83.0 : 49.0)
+#define HexRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
 
 #define ViewController_BackGround [UIColor colorWithRed:243.0/255.0 green:243.0/255.0 blue:243.0/255.0 alpha:1.0]//视图控制器背景颜色

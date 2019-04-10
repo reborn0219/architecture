@@ -9,7 +9,11 @@
 #import "NaviBarView.h"
 
 @implementation NaviBarView
-
+-(void)awakeFromNib{
+    [super awakeFromNib];
+    [self.subtitleLb setHidden:YES];
+    [self setBackgroundColor:BackColor];
+}
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
