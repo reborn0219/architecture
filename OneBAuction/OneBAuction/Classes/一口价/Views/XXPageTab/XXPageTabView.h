@@ -41,6 +41,8 @@ typedef NS_ENUM(NSInteger, XXPageTabIndicatorStyle) {
 @property (nonatomic, strong) UIColor *unSelectedColor;
 /*当前选中颜色*/
 @property (nonatomic, strong) UIColor *selectedColor;
+/*滚动条选中颜色*/
+@property (nonatomic, strong) UIColor *lineSelectedColor;
 /*tab背景色，默认white*/
 @property (nonatomic, strong) UIColor *tabBackgroundColor;
 /*body背景色，默认white*/

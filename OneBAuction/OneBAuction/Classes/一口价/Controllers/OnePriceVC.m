@@ -55,22 +55,22 @@
     //    self.pageTabView.bodyBounces = NO;
     //    self.pageTabView.tabSize = CGSizeMake(self.view.frame.size.width, 40);
     self.pageTabView.titleStyle = XXPageTabTitleStyleDefault;
-    self.pageTabView.indicatorStyle = XXPageTabIndicatorStyleStretch;
+    self.pageTabView.indicatorStyle = XXPageTabIndicatorStyleDefault;
 //    self.pageTabView.separatorColor = UIColorHex(0xBA0000);
     //    self.pageTabView.minScale = 1.0;
     //    self.pageTabView.selectedTabIndex = 0;
     //    self.pageTabView.selectedTabIndex = -1;
     //    self.pageTabView.selectedTabIndex = 4;
     //    self.pageTabView.maxNumberOfPageItems = 1;
-    //    self.pageTabView.maxNumberOfPageItems = 7;
+        self.pageTabView.maxNumberOfPageItems = 8;
     //    self.pageTabView.tabItemFont = [UIFont systemFontOfSize:18];
     //    self.pageTabView.indicatorHeight = 5;
-    self.pageTabView.indicatorWidth = 20;
+    self.pageTabView.indicatorWidth = 25;
     //    self.pageTabView.tabBackgroundColor = [UIColor redColor];
     self.pageTabView.unSelectedColor = UIColorHex(0xA6A6A6);
     
     self.pageTabView.selectedColor = UIColorHex(0x222222);
-    
+    self.pageTabView.lineSelectedColor = UIColorHex(0xBA0000);
     //    self.pageTabView.tabSize = CGSizeMake(self.view.bounds.size.width-30, 0);
     [self.view addSubview:self.pageTabView];
     

@@ -52,7 +52,7 @@
     if (!_collectionView) {
         
         UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
-       _collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(15,0, kScreenWidth-30, kScreenHeight-k_Height_NavBar-40) collectionViewLayout:layout];
+       _collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(15,10, kScreenWidth-30, kScreenHeight-k_Height_NavBar-40-10) collectionViewLayout:layout];
         [_collectionView setBackgroundColor:[UIColor clearColor]];
         _collectionView.delegate = self;
         _collectionView.dataSource = self;
@@ -65,7 +65,7 @@
 //cell的最小行间距
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section
 {
-    return 5;
+    return 10;
 }
 //cell的最小列间距
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section
@@ -74,7 +74,7 @@
 }
 -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    return CGSizeMake((SCREENWIDTH-30-10)/2,(SCREENWIDTH-30-10)/2*2);
+    return CGSizeMake((SCREENWIDTH-30-10)/2,(SCREENWIDTH-30-10)/2*1.5);
 }
 -(UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
 {

@@ -25,14 +25,12 @@
 }
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    self.tabBarController.hidesBottomBarWhenPushed = YES;
     [self setNaviBar:1];
     [self setCustomerTitle:@"0元拍"];
     [self.view setBackgroundColor:[UIColor whiteColor]];
 }
 -(void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
-    self.tabBarController.hidesBottomBarWhenPushed = NO;
 }
 -(ZeroAuctionHeaderView *)headerView{
     if (!_headerView) {

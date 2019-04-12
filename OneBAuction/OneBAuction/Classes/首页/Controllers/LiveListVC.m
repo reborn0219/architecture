@@ -23,7 +23,6 @@
 }
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    self.tabBarController.hidesBottomBarWhenPushed = YES;
     [self setCustomerTitle:@"直播拍卖"];
     [self setNaviBar:2];
     [self.view setBackgroundColor:BackColor];
@@ -31,7 +30,6 @@
 }
 -(void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
-    self.tabBarController.hidesBottomBarWhenPushed = NO;
 }
 -(UITableView *)tableView{
     if (!_tableView) {

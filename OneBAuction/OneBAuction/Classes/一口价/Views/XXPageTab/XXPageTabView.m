@@ -158,6 +158,7 @@
     _bodyBackgroundColor = [UIColor clearColor];
     _unSelectedColor = [UIColor blackColor];
     _selectedColor = [UIColor redColor];
+    _lineSelectedColor = [UIColor redColor];
     _separatorColor = [UIColor clearColor];
     _isNeedRefreshLayout = YES;
     _isChangeByClick = NO;
@@ -630,7 +631,7 @@
 - (UIView *)indicatorView {
     if(!_indicatorView) {
         _indicatorView = [UIView new];
-        _indicatorView.backgroundColor = _selectedColor;
+        _indicatorView.backgroundColor = _lineSelectedColor;
     }
     return _indicatorView;
 }
@@ -687,14 +688,17 @@
     _selectedColor = selectedColor;
     XXPageTabItemLable *tabItem = _tabItems[_selectedTabIndex];
     tabItem.textColor = _selectedColor;
-    self.indicatorView.backgroundColor = _selectedColor;
     
     NSArray *rgb = [self getRGBWithColor:_selectedColor];
     _selectedColorR = [rgb[0] floatValue];
     _selectedColorG = [rgb[1] floatValue];
     _selectedColorB = [rgb[2] floatValue];
 }
+-(void)setLineSelectedColor:(UIColor *)lineSelectedColor{
+    _lineSelectedColor = lineSelectedColor;
+    self.indicatorView.backgroundColor = _lineSelectedColor;
 
+}
 - (void)setBodyBounces:(BOOL)bodyBounces {
     _bodyBounces = bodyBounces;
     self.bodyView.bounces = _bodyBounces;

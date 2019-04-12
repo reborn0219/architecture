@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		1151E556370B8653813B7FBC /* libPods-OneBAuctionTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 411E446FB6E2E7A380FA674B /* libPods-OneBAuctionTests.a */; };
 		1ED81A22DE367E20DF550A37 /* libPods-OneBAuction.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E3AF5865BB26CD52C9A91CC /* libPods-OneBAuction.a */; };
+		4B090055225F7D4F008E52CE /* CommunicationItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B090053225F7D4F008E52CE /* CommunicationItemCell.m */; };
+		4B090056225F7D4F008E52CE /* CommunicationItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B090054225F7D4F008E52CE /* CommunicationItemCell.xib */; };
+		4B09005A225F7D60008E52CE /* CommunicationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B090058225F7D60008E52CE /* CommunicationCell.m */; };
+		4B09005B225F7D60008E52CE /* CommunicationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B090059225F7D60008E52CE /* CommunicationCell.xib */; };
+		4B09005E225F83AB008E52CE /* ReleaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B09005D225F83AB008E52CE /* ReleaseView.m */; };
+		4B090060225F83B7008E52CE /* ReleaseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B09005F225F83B7008E52CE /* ReleaseView.xib */; };
 		4B16A5212259F33F0099F23E /* PANewHomeBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B16A5202259F33F0099F23E /* PANewHomeBannerView.m */; };
 		4B16A524225A3CFE0099F23E /* HomePageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B16A523225A3CFE0099F23E /* HomePageView.m */; };
 		4B16A526225A3D0A0099F23E /* HomePageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B16A525225A3D0A0099F23E /* HomePageView.xib */; };
@@ -69,6 +75,15 @@
 
 /* Begin PBXFileReference section */
 		411E446FB6E2E7A380FA674B /* libPods-OneBAuctionTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OneBAuctionTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B090052225F7D4F008E52CE /* CommunicationItemCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommunicationItemCell.h; sourceTree = "<group>"; };
+		4B090053225F7D4F008E52CE /* CommunicationItemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommunicationItemCell.m; sourceTree = "<group>"; };
+		4B090054225F7D4F008E52CE /* CommunicationItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommunicationItemCell.xib; sourceTree = "<group>"; };
+		4B090057225F7D60008E52CE /* CommunicationCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommunicationCell.h; sourceTree = "<group>"; };
+		4B090058225F7D60008E52CE /* CommunicationCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommunicationCell.m; sourceTree = "<group>"; };
+		4B090059225F7D60008E52CE /* CommunicationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommunicationCell.xib; sourceTree = "<group>"; };
+		4B09005C225F83AB008E52CE /* ReleaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReleaseView.h; sourceTree = "<group>"; };
+		4B09005D225F83AB008E52CE /* ReleaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReleaseView.m; sourceTree = "<group>"; };
+		4B09005F225F83B7008E52CE /* ReleaseView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReleaseView.xib; sourceTree = "<group>"; };
 		4B16A51F2259F33F0099F23E /* PANewHomeBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PANewHomeBannerView.h; sourceTree = "<group>"; };
 		4B16A5202259F33F0099F23E /* PANewHomeBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PANewHomeBannerView.m; sourceTree = "<group>"; };
 		4B16A522225A3CFE0099F23E /* HomePageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomePageView.h; sourceTree = "<group>"; };
@@ -418,6 +433,12 @@
 		4B8CD6DC2258BF0900271086 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4B090052225F7D4F008E52CE /* CommunicationItemCell.h */,
+				4B090053225F7D4F008E52CE /* CommunicationItemCell.m */,
+				4B090054225F7D4F008E52CE /* CommunicationItemCell.xib */,
+				4B090057225F7D60008E52CE /* CommunicationCell.h */,
+				4B090058225F7D60008E52CE /* CommunicationCell.m */,
+				4B090059225F7D60008E52CE /* CommunicationCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -542,6 +563,9 @@
 			children = (
 				4B8CD6F62258C30E00271086 /* ReleaseController.h */,
 				4B8CD6F72258C30E00271086 /* ReleaseController.m */,
+				4B09005C225F83AB008E52CE /* ReleaseView.h */,
+				4B09005D225F83AB008E52CE /* ReleaseView.m */,
+				4B09005F225F83B7008E52CE /* ReleaseView.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -693,6 +717,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B090060225F83B7008E52CE /* ReleaseView.xib in Resources */,
 				4B16A52B225A4C4F0099F23E /* OnePriceCell.xib in Resources */,
 				4BA37B5C225E06AC0086DA9C /* ZeroAuctionHeaderView.xib in Resources */,
 				4B8CD68B22587C0300271086 /* LaunchScreen.storyboard in Resources */,
@@ -701,7 +726,9 @@
 				4BA37B61225E0C790086DA9C /* ZeroAuctionCell.xib in Resources */,
 				4B16A526225A3D0A0099F23E /* HomePageView.xib in Resources */,
 				4B8CD68622587C0200271086 /* Main.storyboard in Resources */,
+				4B09005B225F7D60008E52CE /* CommunicationCell.xib in Resources */,
 				4BA37B57225DFAAE0086DA9C /* LiveListCell.xib in Resources */,
+				4B090056225F7D4F008E52CE /* CommunicationItemCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -807,6 +834,7 @@
 				4B8CD6D12258B90F00271086 /* BaseNavigationController.m in Sources */,
 				4B8CD6CE2258B8E900271086 /* BaseViewController.m in Sources */,
 				4BA37B56225DFAAE0086DA9C /* LiveListCell.m in Sources */,
+				4B09005E225F83AB008E52CE /* ReleaseView.m in Sources */,
 				4BAE437E225B923B00BF26B6 /* XXPageTabItemLable.m in Sources */,
 				4BA37B4F225DDBF50086DA9C /* LiveListVC.m in Sources */,
 				4B8CD6F02258C00500271086 /* CommunicationVC.m in Sources */,
@@ -825,9 +853,11 @@
 				4BAE437F225B923B00BF26B6 /* XXPageTabView.m in Sources */,
 				4B8CD68E22587C0300271086 /* main.m in Sources */,
 				4B8CD6B32258ADEC00271086 /* MainTabBarController.m in Sources */,
+				4B09005A225F7D60008E52CE /* CommunicationCell.m in Sources */,
 				4B8CD6F32258C03000271086 /* MyController.m in Sources */,
 				4BA37B52225DDC1C0086DA9C /* ZeroAuctionVC.m in Sources */,
 				4B16A524225A3CFE0099F23E /* HomePageView.m in Sources */,
+				4B090055225F7D4F008E52CE /* CommunicationItemCell.m in Sources */,
 				4B8CD6C42258B69A00271086 /* UIFactory.m in Sources */,
 				4B8CD68022587C0200271086 /* AppDelegate.m in Sources */,
 				4BA37B60225E0C790086DA9C /* ZeroAuctionCell.m in Sources */,

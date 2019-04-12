@@ -19,6 +19,10 @@
                 <rect key="frame" x="0.0" y="0.0" width="208" height="337"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FpG-vx-hfy">
+                        <rect key="frame" x="0.0" y="0.0" width="208" height="337"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hWu-rf-VHg">
                         <rect key="frame" x="0.0" y="0.0" width="208" height="337"/>
                         <subviews>
@@ -62,7 +66,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="208" height="212"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="vnW-Jw-B7p" firstAttribute="leading" secondItem="hWu-rf-VHg" secondAttribute="leading" constant="15" id="2v9-dp-EbJ"/>
                             <constraint firstAttribute="trailing" secondItem="HqJ-j7-gAb" secondAttribute="trailing" id="G6W-oR-H5J"/>
@@ -82,15 +85,19 @@
                 </subviews>
             </view>
             <constraints>
+                <constraint firstAttribute="bottom" secondItem="FpG-vx-hfy" secondAttribute="bottom" id="06Z-ny-efh"/>
+                <constraint firstItem="FpG-vx-hfy" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="5qU-Be-uKv"/>
                 <constraint firstItem="hWu-rf-VHg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="8w2-5i-Jry"/>
                 <constraint firstAttribute="trailing" secondItem="hWu-rf-VHg" secondAttribute="trailing" id="FAq-5Y-OLc"/>
                 <constraint firstAttribute="bottom" secondItem="hWu-rf-VHg" secondAttribute="bottom" id="KtT-l9-3q0"/>
+                <constraint firstItem="FpG-vx-hfy" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="OVA-BB-y19"/>
                 <constraint firstItem="hWu-rf-VHg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="SiB-ec-jqY"/>
+                <constraint firstAttribute="trailing" secondItem="FpG-vx-hfy" secondAttribute="trailing" id="c7D-Na-CnA"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
             <size key="customSize" width="208" height="337"/>
             <connections>
-                <outlet property="backView" destination="hWu-rf-VHg" id="zuZ-Bc-5ER"/>
+                <outlet property="backView" destination="FpG-vx-hfy" id="Rmr-HY-TDR"/>
             </connections>
             <point key="canvasLocation" x="252.17391304347828" y="187.16517857142856"/>
         </collectionViewCell>
