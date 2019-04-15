@@ -8,7 +8,7 @@
 
 #import "PageOneViewController.h"
 #import "OnePriceCell.h"
-
+#import "ReleaseView.h"
 @interface PageOneViewController ()<UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UICollectionViewDelegate>
 @property(nonatomic,strong)UICollectionView *collectionView;
 @property(nonatomic,strong)NSMutableArray *task_listArr;

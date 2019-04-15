@@ -40,6 +40,13 @@
     };
     
 }
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+}
+-(void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+}
+
 - (HomePageView *)backView{
     if (!_backView) {
         _backView = [[[NSBundle mainBundle] loadNibNamed:@"HomePageView" owner:self options:nil] lastObject];

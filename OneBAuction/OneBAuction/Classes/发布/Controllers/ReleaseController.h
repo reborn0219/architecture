@@ -7,6 +7,7 @@
 //
 
 #import "BaseViewController.h"
+#import "ReleaseView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
