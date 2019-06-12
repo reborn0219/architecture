@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1151E556370B8653813B7FBC /* libPods-OneBAuctionTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 411E446FB6E2E7A380FA674B /* libPods-OneBAuctionTests.a */; };
 		1ED81A22DE367E20DF550A37 /* libPods-OneBAuction.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E3AF5865BB26CD52C9A91CC /* libPods-OneBAuction.a */; };
+		2F1065CE22B08C4C002D3B6D /* ImageItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1065CC22B08C4C002D3B6D /* ImageItemCell.m */; };
+		2F1065CF22B08C4C002D3B6D /* ImageItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F1065CD22B08C4C002D3B6D /* ImageItemCell.xib */; };
 		4B090055225F7D4F008E52CE /* CommunicationItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B090053225F7D4F008E52CE /* CommunicationItemCell.m */; };
 		4B090056225F7D4F008E52CE /* CommunicationItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B090054225F7D4F008E52CE /* CommunicationItemCell.xib */; };
 		4B09005A225F7D60008E52CE /* CommunicationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B090058225F7D60008E52CE /* CommunicationCell.m */; };
@@ -74,6 +76,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F1065CB22B08C4C002D3B6D /* ImageItemCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageItemCell.h; sourceTree = "<group>"; };
+		2F1065CC22B08C4C002D3B6D /* ImageItemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageItemCell.m; sourceTree = "<group>"; };
+		2F1065CD22B08C4C002D3B6D /* ImageItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageItemCell.xib; sourceTree = "<group>"; };
 		411E446FB6E2E7A380FA674B /* libPods-OneBAuctionTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OneBAuctionTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B090052225F7D4F008E52CE /* CommunicationItemCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommunicationItemCell.h; sourceTree = "<group>"; };
 		4B090053225F7D4F008E52CE /* CommunicationItemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommunicationItemCell.m; sourceTree = "<group>"; };
@@ -439,6 +444,9 @@
 				4B090057225F7D60008E52CE /* CommunicationCell.h */,
 				4B090058225F7D60008E52CE /* CommunicationCell.m */,
 				4B090059225F7D60008E52CE /* CommunicationCell.xib */,
+				2F1065CB22B08C4C002D3B6D /* ImageItemCell.h */,
+				2F1065CC22B08C4C002D3B6D /* ImageItemCell.m */,
+				2F1065CD22B08C4C002D3B6D /* ImageItemCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -718,6 +726,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B090060225F83B7008E52CE /* ReleaseView.xib in Resources */,
+				2F1065CF22B08C4C002D3B6D /* ImageItemCell.xib in Resources */,
 				4B16A52B225A4C4F0099F23E /* OnePriceCell.xib in Resources */,
 				4BA37B5C225E06AC0086DA9C /* ZeroAuctionHeaderView.xib in Resources */,
 				4B8CD68B22587C0300271086 /* LaunchScreen.storyboard in Resources */,
@@ -858,6 +867,7 @@
 				4BA37B52225DDC1C0086DA9C /* ZeroAuctionVC.m in Sources */,
 				4B16A524225A3CFE0099F23E /* HomePageView.m in Sources */,
 				4B090055225F7D4F008E52CE /* CommunicationItemCell.m in Sources */,
+				2F1065CE22B08C4C002D3B6D /* ImageItemCell.m in Sources */,
 				4B8CD6C42258B69A00271086 /* UIFactory.m in Sources */,
 				4B8CD68022587C0200271086 /* AppDelegate.m in Sources */,
 				4BA37B60225E0C790086DA9C /* ZeroAuctionCell.m in Sources */,

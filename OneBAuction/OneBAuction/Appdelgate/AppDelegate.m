@@ -54,8 +54,8 @@
 
 - (void)selectRootController
 {
-    [[UIApplication sharedApplication] setStatusBarHidden:NO];
     
+    [[UIApplication sharedApplication] setStatusBarHidden:NO];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
     self.tabbar = [[MainTabBarController alloc] init];
